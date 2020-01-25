@@ -26,7 +26,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <main className="app app-container">
+      <main id="main-content" className="app app-container" data-testid="main-content">
         <Header />
         <Players
           players={this.state.players}
