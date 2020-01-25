@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/App.css';
+import Header from "./components/header/Header";
 import Players from "./components/players/Players";
 
 class App extends React.Component {
@@ -26,9 +27,7 @@ class App extends React.Component {
   render() {
     return (
       <main className="app app-container">
-        <header className="app-header">
-          <h1 className="app-title">Players</h1>
-        </header>
+        <Header />
         <Players
           players={this.state.players}
         />
