@@ -4,8 +4,14 @@ const Player = ({player}) => {
 	return (
 		<li className="card list-item">
 			<article className="card-player">
-				<div className="card-avatar">
-					{player.name}
+				<div className="card-demographics">
+					<span className="player player-name">
+						{player.name}
+					</span>
+					<span className="player player-country">
+						<span className="player-label">Country</span>
+						<span className="player-text">{player.country}</span>
+					</span>
 				</div>
 			</article>
 		</li>

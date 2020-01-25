@@ -9,6 +9,7 @@ class App extends React.Component {
   };
 
   componentDidMount() {
+
     fetch('http://localhost:5000/api/players')
       .then(res => res.json())
       .then(players => {
@@ -24,12 +25,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <main className="App">
-        <header className="App-header">
-          <Players
-            players={this.state.players}
-          />
+      <main className="app app-container">
+        <header className="app-header">
+          <h1 className="app-title">Players</h1>
         </header>
+        <Players
+          players={this.state.players}
+        />
       </main>
     );
   }

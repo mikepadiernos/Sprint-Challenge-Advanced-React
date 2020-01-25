@@ -7,6 +7,7 @@ const Players = props => {
 			<ul className="list list-players">
 				{props.players.map(player => (
 					<Player
+						key={player.id}
 						player={player}
 					/>
 				))}
