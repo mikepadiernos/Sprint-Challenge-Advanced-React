@@ -4,7 +4,7 @@ import Player from "./Player";
 const Players = props => {
 	return (
 		<section className="container container-players">
-			<ul className="list list-players">
+			<ul className="cards cards-players">
 				{props.players.map(player => (
 					<Player
 						key={player.id}

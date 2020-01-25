@@ -6,7 +6,7 @@ const Player = ({player}) => {
 			<article className="card-player">
 				<div className="card-demographics">
 					<span className="player player-name">
-						{player.name}
+						<h2 className="player-title">{player.name}</h2>
 					</span>
 					<span className="player player-country">
 						<span className="player-label">Country</span>
